@@ -54,7 +54,18 @@ https://github.com/gwt-test-utils/gwt-test-utils
 * @GwtModule("com.efigence.efinity.gxt.Efinity-web-gxt") na klasie testu
 * gwt-test-utils.properties w src/test/resources z deklaracjami modułów *.gwt.xml
 * com.efigence.efinity.gxt.Efinity-web-gxt = gwt-module
+
+## Przykłady
+* ToggleButtonTest
+* AutoBeanCodexTest
+* MyMessagesTest
+* ClientBundleTest
+* SafeHtmlTest
+* UiBinderWithListBoxTest
+* CookiesTest
+* FlexTableTest
  
+
 # Połączenie Jukito i GwtTest - @RunWith(JukitoGwtTestRunner.class)
 ## Możliwości
 * Wstrzykiwanie zależności jak w czystym Jukito
@@ -65,6 +76,7 @@ https://github.com/gwt-test-utils/gwt-test-utils
 zamiast @RunWith(JukitoRunner.class) stosujemy @RunWith(JukitoGwtTestRunner.class) na klasie testu
 
 ## Przykłady
+* JukitoGwtTestRunnerTest (gwt-test-utils code base) 
 * TestAddressDataEditor - testy prostego edytora
 * TestTwoAddressOneDriver - test bardziej złożonego edytora
  
