@@ -100,12 +100,9 @@ zamiast @RunWith(JukitoRunner.class) stosujemy @RunWith(JukitoGwtTestRunner.clas
 * TestAddressDataEditor - testy prostego edytora
 * TestTwoAddressOneDriver - test bardziej złożonego edytora
  
-
-
-
-
-* 
 # Pułapki
+* niekompletne/nieprawidłowe mockowanie
+* deffered command i mockowanie asynchronicznych zdarzeń
 
 # Usecases a la WebDriver
 ## Jako U rejestruje swój profil
