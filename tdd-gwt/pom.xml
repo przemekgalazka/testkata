@@ -316,8 +316,15 @@
       <artifactId>xalan</artifactId>
       <version>${xalan.version}</version>
     </dependency>
+      <dependency>
+          <groupId>com.github.gwtbootstrap</groupId>
+          <artifactId>gwt-bootstrap</artifactId>
+          <version>2.2.1.0</version>
+          <scope>compile</scope>
+      </dependency>
 
-    <!-- Test dependencies -->
+
+      <!-- Test dependencies -->
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>

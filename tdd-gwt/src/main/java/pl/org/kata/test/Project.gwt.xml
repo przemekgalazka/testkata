@@ -17,6 +17,7 @@
 
     <!-- Other module inherits                                      -->
     <inherits name='com.gwtplatform.mvp.MvpWithEntryPoint' />
+    <inherits name="com.github.gwtbootstrap.Bootstrap" />
 
     <source path='client' />
     <source path='shared' />
