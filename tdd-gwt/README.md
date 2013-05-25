@@ -1,11 +1,13 @@
 # Agenda
 * Podstawy
+* Edytory i Driver
+* Request Factory
 * Jukito - http://jukito.arcbees.com/
 * gwt-test-utils - https://github.com/gwt-test-utils/gwt-test-utils
 * Połączenie Jukito i GwtTest - @RunWith(JukitoGwtTestRunner.class)
 * Moduły Testowe
-* Request Factory
-* Edytory i Driver
+
+
 
 # Build & Run
 * mvn clean install
@@ -20,6 +22,18 @@
 * nazwy testów
 * Practical Unit Testing - Tomek Kaczanowski
  
+# Edytory i Driver
+* Abstrakcja i automat do ustawiania modelu i pobierania modelu z formatki
+* Graf edytorów odpowiada grafowi domeny
+* Stanowy driver wpisuje modele do edytorów i po zakończeniu edycji przez user'a aktualizuje modele
+
+# Request Factory
+* Operowanie na projekcjach modelu JPA
+* Brak problemu z Lazy Init
+* Automatyczne rewrittery
+* Automatyczny binding do Edytorów
+* ATP na etapie kompilacji - kontrola kontraktu
+
 # Jukito
 http://jukito.arcbees.com/
 ## Możliwości Jukito
@@ -30,14 +44,19 @@ http://jukito.arcbees.com/
 ## Konfiguracja Jukito
 * @RunWith(JukitoRunner.class) na klasie testu
 * klasa wewnętrzna z modułami Guice:   public static class A extends JukitoModule
- 
+
+
 ## Przykłady
 * RespectProvidesAnnotationInModuleTest (jukito code base)
 * RespectTestScopeWhenUsingAbstractModuleTest (jukito code base)
 * TestBrowserHistoryTestImpl
-* EnvironmentDependentModulesTest (jukito code base)
 * TestEventBusTestImpl
 
+# EDRunner 
+* motywacja
+* jak działa
+* do czego może się przydać
+* EnvironmentDependentModulesTest (jukito code base)
 
 ## Uwagi
 * Scope @TestSingleton jest używany domyślnie dla klas. Interfejsy są bindowane w normalnym Scope
@@ -64,6 +83,7 @@ https://github.com/gwt-test-utils/gwt-test-utils
 * UiBinderWithListBoxTest
 * CookiesTest
 * FlexTableTest
+* SchedulerTest
  
 
 # Połączenie Jukito i GwtTest - @RunWith(JukitoGwtTestRunner.class)
@@ -81,19 +101,10 @@ zamiast @RunWith(JukitoRunner.class) stosujemy @RunWith(JukitoGwtTestRunner.clas
 * TestTwoAddressOneDriver - test bardziej złożonego edytora
  
 
-# Request Factory
-* Operowanie na projekcjach modelu JPA
-* Brak problemu z Lazy Init
-* Automatyczne rewrittery
-* Automatyczny binding do Edytorów
-* ATP na etapie kompilacji - kontrola kontraktu
 
-# Edytory i Driver
-* Abstrakcja i automat do ustawiania modelu i pobierania modelu z formatki
-* Graf edytorów odpowiada grafowi domeny
-* Stanowy driver wpisuje modele do edytorów i po zakończeniu edycji przez user'a aktualizuje modele
 
-# EDRunner 
+
+* 
 # Pułapki
 
 # Usecases a la WebDriver
